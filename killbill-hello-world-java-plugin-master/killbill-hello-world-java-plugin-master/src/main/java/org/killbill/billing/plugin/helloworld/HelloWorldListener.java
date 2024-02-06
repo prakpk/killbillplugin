@@ -31,45 +31,37 @@ public class HelloWorldListener implements OSGIKillbillEventDispatcher.OSGIKillb
             // TODO: Add cases for PAYMENT_FAILED and PAYMENT_SUCCESS to handle payment retries
 
             // Example for handling new subscriptions (INVOICE_CREATION)
-            case INVOICE_CREATION:
-                handleInvoiceCreation(killbillEvent, context);
-                break;
-            case INVOICE_ADJUSTMENT:
-                handleInvoiceCreation(killbillEvent, context);
-                break;
-            
-            // Example for handling overdue invoices
-            case OVERDUE_INVOICE:
-                handleOverdueInvoice(killbillEvent, context);
-                break;
-
+                      
             // Example for handling payment retries
-            case PAYMENT_FAILED:
-                handlePaymentFailed(killbillEvent, context);
-                break;
-            case PAYMENT_SUCCESS:
-                handlePaymentSuccess(killbillEvent, context);
-                break;
+            // case PAYMENT_FAILED:
+            //     handlePaymentFailed(killbillEvent, context);
+            //     break;
+            // case PAYMENT_SUCCESS:
+            //     handlePaymentSuccess(killbillEvent, context);
+            //     break;
 
             // Existing cases...
             // case ACCOUNT_CREATION:(external)
             case BLOCKING_STATE:
+            case BROADCAST_SERVICE:
             // case SUBSCRIPTION_CREATION:(external)
             case SUBSCRIPTION_PHASE:
             case SUBSCRIPTION_CHANGE:
-            // case SUBSCRIPTION_CANCEL:(external)
+            case SUBSCRIPTION_CANCEL:
             // case SUBSCRIPTION_UNCANCEL:(external)
-            // case SUBSCRIPTION_BCD_CHANGE:(external)
+            case SUBSCRIPTION_BCD_CHANGE:
             case ENTITLEMENT_CREATION:
             case ENTITLEMENT_CANCEL:
             case BUNDLE_PAUSE:
             case BUNDLE_RESUME:
             case OVERDUE_CHANGE:
-            case INVOICE_NOTIFICATION:
-
-            case ACCOUNT_CHANGE:
-                handleAccountChange(killbillEvent, context);
+            case INVOICE_CREATION:
+                handleInvoiceCreation(killbillEvent, context);
                 break;
+            case INVOICE_ADJUSTMENT:
+                handleStateChange(killbillEvent, context);
+                break;
+            case INVOICE_NOTIFICATION:
 
             default:
                 break;
@@ -95,7 +87,7 @@ public class HelloWorldListener implements OSGIKillbillEventDispatcher.OSGIKillb
        
     
 
-    private void handleOverdueInvoice(final ExtBusEvent event, final PluginTenantContext context) {
+    private void handleStateChange(final ExtBusEvent event, final PluginTenantContext context) {
         UUID invoiceId = event.getObjectId(); // Assuming the objectId here is the invoiceId
     
         // Format the data as required by Xano's webhook endpoint
