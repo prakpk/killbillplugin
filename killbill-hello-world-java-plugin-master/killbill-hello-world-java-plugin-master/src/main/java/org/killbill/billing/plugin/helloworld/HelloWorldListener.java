@@ -56,7 +56,7 @@ public class HelloWorldListener implements OSGIKillbillEventDispatcher.OSGIKillb
             case BLOCKING_STATE:
             // case SUBSCRIPTION_CREATION:(external)
             case SUBSCRIPTION_PHASE:
-            // case SUBSCRIPTION_CHANGE:(external)
+            case SUBSCRIPTION_CHANGE:
             // case SUBSCRIPTION_CANCEL:(external)
             // case SUBSCRIPTION_UNCANCEL:(external)
             // case SUBSCRIPTION_BCD_CHANGE:(external)
