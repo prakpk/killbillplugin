@@ -52,21 +52,21 @@ public class HelloWorldListener implements OSGIKillbillEventDispatcher.OSGIKillb
                 break;
 
             // Existing cases...
-            case ACCOUNT_CREATION:
+            // case ACCOUNT_CREATION:(external)
             case BLOCKING_STATE:
-            case SUBSCRIPTION_CREATION:
+            // case SUBSCRIPTION_CREATION:(external)
             case SUBSCRIPTION_PHASE:
-            case SUBSCRIPTION_CHANGE:
-            case SUBSCRIPTION_CANCEL:
-            case SUBSCRIPTION_UNCANCEL:
-            case SUBSCRIPTION_BCD_CHANGE:
+            // case SUBSCRIPTION_CHANGE:(external)
+            // case SUBSCRIPTION_CANCEL:(external)
+            // case SUBSCRIPTION_UNCANCEL:(external)
+            // case SUBSCRIPTION_BCD_CHANGE:(external)
             case ENTITLEMENT_CREATION:
             case ENTITLEMENT_CANCEL:
             case BUNDLE_PAUSE:
             case BUNDLE_RESUME:
             case OVERDUE_CHANGE:
             case INVOICE_NOTIFICATION:
-            
+
             case ACCOUNT_CHANGE:
                 handleAccountChange(killbillEvent, context);
                 break;
