@@ -34,6 +34,9 @@ public class HelloWorldListener implements OSGIKillbillEventDispatcher.OSGIKillb
             case INVOICE_CREATION:
                 handleInvoiceCreation(killbillEvent, context);
                 break;
+            case INVOICE_ADJUSTMENT:
+                handleInvoiceCreation(killbillEvent, context);
+                break;
             
             // Example for handling overdue invoices
             case OVERDUE_INVOICE:
@@ -50,6 +53,20 @@ public class HelloWorldListener implements OSGIKillbillEventDispatcher.OSGIKillb
 
             // Existing cases...
             case ACCOUNT_CREATION:
+            case BLOCKING_STATE:
+            case SUBSCRIPTION_CREATION:
+            case SUBSCRIPTION_PHASE:
+            case SUBSCRIPTION_CHANGE:
+            case SUBSCRIPTION_CANCEL:
+            case SUBSCRIPTION_UNCANCEL:
+            case SUBSCRIPTION_BCD_CHANGE:
+            case ENTITLEMENT_CREATION:
+            case ENTITLEMENT_CANCEL:
+            case BUNDLE_PAUSE:
+            case BUNDLE_RESUME:
+            case OVERDUE_CHANGE:
+            case INVOICE_NOTIFICATION:
+            
             case ACCOUNT_CHANGE:
                 handleAccountChange(killbillEvent, context);
                 break;
