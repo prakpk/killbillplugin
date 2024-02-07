@@ -1,0 +1,168 @@
+E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master>mvn clean install -DskipTests
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --------< org.kill-bill.billing.plugin.java:hello-world-plugin >--------
+[INFO] Building Kill Bill OSGI Hello World bundle 2.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ hello-world-plugin ---
+[INFO] Deleting E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\target
+[INFO] 
+[INFO] --- dependency-scope:0.10:check (default) @ hello-world-plugin ---
+[INFO] Skipping plugin execution
+[INFO]
+[INFO] --- enforcer:3.1.0:enforce (default) @ hello-world-plugin ---
+[INFO] Skipping Rule Enforcement.
+[INFO]
+[INFO] --- resources:3.3.0:resources (default-resources) @ hello-world-plugin ---
+[INFO] skip non existing resourceDirectory E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\resources
+[INFO]
+[INFO] --- compiler:3.10.1:compile (default-compile) @ hello-world-plugin ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR :
+[INFO] -------------------------------------------------------------
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[144,35] error: cannot find symbol
+  symbol:   class Map
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[73,8] error: cannot find symbol
+  symbol:   class UUID
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[76,8] error: cannot find symbol
+  symbol:   class Map
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[76,42] error: cannot find symbol
+  symbol:   class HashMap
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[91,8] error: cannot find symbol
+  symbol:   class UUID
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[94,8] error: cannot find symbol
+  symbol:   class Map
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[94,42] error: cannot find symbol
+  symbol:   class HashMap
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[107,18] error: cannot find symbol
+  symbol:   class Account
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[109,23] error: cannot find symbol
+  symbol:   class AccountApiException
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[121,8] error: cannot find symbol
+  symbol:   class HttpClient
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[121,32] error: cannot find symbol
+  symbol:   variable HttpClient
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[122,8] error: cannot find symbol
+  symbol:   class HttpRequest
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[122,30] error: cannot find symbol
+  symbol:   variable HttpRequest
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[123,21] error: cannot find symbol
+  symbol:   variable URI
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[125,33] error: package HttpRequest does not exist
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[129,12] error: cannot find symbol
+  symbol:   class HttpResponse
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[129,81] error: package HttpResponse does not exist
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[137,17] error: cannot find symbol
+  symbol:   class IOException
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[148,8] error: cannot find symbol
+  symbol:   class ObjectMapper
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[148,40] error: cannot find symbol
+  symbol:   class ObjectMapper
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[151,17] error: cannot find symbol
+  symbol:   class JsonProcessingException
+  location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldActivator.java:[72,31] error: constructor HelloWorldListener in class HelloWorldListener cannot be applied to given types;
+  required: OSGIKillbillAPI
+  found:    OSGIKillbillAPI,String
+  reason: actual and formal argument lists differ in length
+[INFO] 22 errors
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.996 s
+[INFO] Finished at: 2024-02-07T13:29:29+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.10.1:compile (default-compile) on project hello-world-plugin: Compilation failure: Compilation failure: 
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[144,35] error: cannot find symbol
+[ERROR]   symbol:   class Map
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[73,8] error: cannot find symbol
+[ERROR]   symbol:   class UUID
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[76,8] error: cannot find symbol
+[ERROR]   symbol:   class Map
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[76,42] error: cannot find symbol
+[ERROR]   symbol:   class HashMap
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[91,8] error: cannot find symbol
+[ERROR]   symbol:   class UUID
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[94,8] error: cannot find symbol
+[ERROR]   symbol:   class Map
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[94,42] error: cannot find symbol
+[ERROR]   symbol:   class HashMap
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[107,18] error: cannot find symbol
+[ERROR]   symbol:   class Account
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[109,23] error: cannot find symbol
+[ERROR]   symbol:   class AccountApiException
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[121,8] error: cannot find symbol
+[ERROR]   symbol:   class HttpClient
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[121,32] error: cannot find symbol
+[ERROR]   symbol:   variable HttpClient
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[122,8] error: cannot find symbol
+[ERROR]   symbol:   class HttpRequest
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[122,30] error: cannot find symbol
+[ERROR]   symbol:   variable HttpRequest
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[123,21] error: cannot find symbol
+[ERROR]   symbol:   variable URI
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[125,33] error: package HttpRequest does not exist
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[129,12] error: cannot find symbol
+[ERROR]   symbol:   class HttpResponse
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[129,81] error: package HttpResponse does not exist
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[137,17] error: cannot find symbol
+[ERROR]   symbol:   class IOException
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[148,8] error: cannot find symbol
+[ERROR]   symbol:   class ObjectMapper
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[148,40] error: cannot find symbol
+[ERROR]   symbol:   class ObjectMapper
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldListener.java:[151,17] error: cannot find symbol
+[ERROR]   symbol:   class JsonProcessingException
+[ERROR]   location: class HelloWorldListener
+[ERROR] E:\TaxBlue\KillBill\Plugin\killbill-hello-world-java-plugin-master\killbill-hello-world-java-plugin-master\src\main\java\org\killbill\billing\plugin\helloworld\HelloWorldActivator.java:[72,31] error: constructor HelloWorldListener in class HelloWorldListener cannot be applied to given types;
+[ERROR]   required: OSGIKillbillAPI
+[ERROR]   found:    OSGIKillbillAPI,String
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
